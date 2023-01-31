@@ -1,0 +1,182 @@
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+body {
+  min-height: 100vh;
+  display: grid;
+  align-items: center;
+  place-items: center;
+  font-size: 15px;
+  font-family: "League Spartan", sans-serif;
+  font-weight: 400;
+  background-image: url(./images/bg-pattern-top-mobile.svg),
+    url(./images/bg-pattern-bottom-mobile.svg);
+  background-repeat: no-repeat, no-repeat;
+  background-position: top, bottom;
+  background-size: 300px;
+  width: 100vw;
+}
+.star {
+  margin-bottom: -10px;
+}
+.rateBox {
+  background-color: hsl(300, 24%, 96%);
+  text-align: center;
+  height: 40px;
+  padding: 10px;
+}
+.rateBox p {
+  color: hsl(300, 43%, 22%);
+  font-weight: 700;
+}
+.ratePerson {
+  background-color: hsl(300, 43%, 22%);
+  color: white;
+  padding: 40px 30px 20px 30px;
+  display: grid;
+  grid-template-rows: 30% auto;
+  grid-template-columns: 30% auto;
+  grid-template-areas:
+    "img hd"
+    "p p";
+}
+span {
+  font-size: 37px;
+}
+.ratePerson,
+.rateBox {
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+.boxes,
+.persons {
+  width: 300px;
+}
+.title {
+  width: 300px;
+}
+.ratePerson img {
+  grid-area: img;
+  width: 50px;
+  border-radius: 50px;
+}
+.name {
+  color: white;
+  font-weight: 500;
+}
+.ratePerson p {
+  grid-area: p;
+  font-weight: 400;
+  line-height: 20px;
+  margin-top: 25px;
+}
+.headname {
+  grid-area: hd;
+  line-height: 0px;
+}
+header p {
+  color: hsl(303, 10%, 53%);
+  font-weight: 500;
+}
+h1 {
+  color: hsl(300, 43%, 22%);
+  font-weight: 700;
+}
+h3 {
+  color: hsl(333, 80%, 67%);
+  font-weight: 400;
+}
+
+header {
+  text-align: center;
+}
+.persons {
+  margin-top: 50px;
+}
+
+@media only screen and (min-width: 992px) {
+  body {
+    background-image: url(./images/bg-pattern-top-desktop.svg),
+      url(./images/bg-pattern-bottom-desktop.svg);
+    background-repeat: no-repeat, no-repeat;
+    background-position: top, bottom;    
+    background-position-x: left,right;
+    background-size:100vh,contain;
+    place-items: baseline;
+    margin: 20px;
+    display: grid;
+    grid-template-rows: auto auto auto;
+    grid-template-columns:250px  480Px;
+    grid-template-areas:
+      "hd reb"
+      "p p"
+      "f f";
+  }
+ header{
+  width: 730px;
+ }
+  h1{
+    width:250px;
+  }
+  header {
+    display: contents;
+  margin-left: -10px;
+  }
+  main {
+    display: grid;
+  }
+  footer {
+    grid-area: f;
+  margin-left: auto;
+  margin-top: 20px;
+  }
+  .title {
+    width:350px;
+    text-align: left;
+    grid-area: hd;
+  }
+  .boxes {
+    grid-area: reb; 
+       margin-left: 270px;
+  }
+  .rateBox {
+    display: grid;
+    grid-template-columns: 40% auto;
+    width: 400px;
+    align-items: center;
+    padding: 0px;
+    margin: 10px;
+
+  }
+  header .star {
+    margin: 0px;
+  }
+  .persons {
+    grid-area: p;
+    display: grid;
+    grid-template-columns: auto auto auto;
+  }
+  .ratePerson {
+    width: 260px;
+height: 160px;
+    
+  }
+  #secrateBox {
+    margin-left: 40px;
+  }
+  #thirateBox {
+    margin-left: 80px;
+  }
+  #secratePerson {
+    margin-top: 15px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  #thiratePerson {
+    margin-top: 30px;
+  }
+}
