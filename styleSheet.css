@@ -106,6 +106,7 @@ header {
     background-position: top, bottom;    
     background-position-x: left,right;
     background-size:100vh,contain;
+    padding-left:10%;
     place-items: baseline;
     margin: 20px;
 width: fit-content;
