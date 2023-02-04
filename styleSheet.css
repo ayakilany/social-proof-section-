@@ -1,5 +1,5 @@
 .attribution {
-  font-size: 11px;
+  font-size: 0.6875rem;
   text-align: center;
 }
 .attribution a {
@@ -10,14 +10,14 @@ body {
   display: grid;
   align-items: center;
   place-items: center;
-  font-size: 15px;
+  font-size: 0.9375rem;
   font-family: "League Spartan", sans-serif;
   font-weight: 400;
   background-image: url(./images/bg-pattern-top-mobile.svg),
     url(./images/bg-pattern-bottom-mobile.svg);
   background-repeat: no-repeat, no-repeat;
   background-position: top, bottom;
-  background-size: 300px;
+  background-size: 18.75rem;
   width: 100vw;
 }
 .star {
@@ -26,8 +26,8 @@ body {
 .rateBox {
   background-color: hsl(300, 24%, 96%);
   text-align: center;
-  height: 40px;
-  padding: 10px;
+  height: 2.5rem;
+  padding: 0.625rem;
 }
 .rateBox p {
   color: hsl(300, 43%, 22%);
@@ -36,47 +36,53 @@ body {
 .ratePerson {
   background-color: hsl(300, 43%, 22%);
   color: white;
-  padding: 40px 30px 20px 30px;
+  padding: 2.5rem 1.875rem 1.25rem 1.875rem;
   display: grid;
   grid-template-rows: 30% auto;
   grid-template-columns: 30% auto;
   grid-template-areas:
-    "img hd"
+    "ih ih"
     "p p";
 }
 span {
-  font-size: 37px;
+  font-size: 2.3125rem;
 }
 .ratePerson,
 .rateBox {
-  border-radius: 5px;
-  margin-bottom: 10px;
+  border-radius: 0.3125rem;
+  margin-bottom: 0.625rem;
 }
 .boxes,
 .persons {
-  width: 300px;
+  width: 18.75rem;
 }
 .title {
-  width: 300px;
+  width: 18.75rem;
 }
 .ratePerson img {
-  grid-area: img;
-  width: 50px;
-  border-radius: 50px;
+  width: 3.125rem;
+  border-radius: 3.125rem;
 }
 .name {
   color: white;
   font-weight: 500;
 }
+.nameImage {
+  grid-area: ih;
+  display: flex;
+  flex-direction: row;
+}
 .ratePerson p {
   grid-area: p;
   font-weight: 400;
-  line-height: 20px;
-  margin-top: 25px;
+  line-height: 1.25rem;
+  margin-top: 1.5625rem;
 }
 .headname {
-  grid-area: hd;
-  line-height: 0px;
+  display: flex;
+  flex-direction: column;
+  margin-left: 0.625rem;
+  margin-top: 0.625rem;
 }
 header p {
   color: hsl(303, 10%, 53%);
@@ -86,16 +92,17 @@ h1 {
   color: hsl(300, 43%, 22%);
   font-weight: 700;
 }
-h3 {
+.headname p {
   color: hsl(333, 80%, 67%);
   font-weight: 400;
+  margin-top: 0rem;
 }
 
 header {
   text-align: center;
 }
 .persons {
-  margin-top: 50px;
+  margin-top: 3.125rem;
 }
 
 @media only screen and (min-width: 700px) {
@@ -103,59 +110,56 @@ header {
     background-image: url(./images/bg-pattern-top-desktop.svg),
       url(./images/bg-pattern-bottom-desktop.svg);
     background-repeat: no-repeat, no-repeat;
-    background-position: top, bottom;    
-    background-position-x: left,right;
-    background-size:100vh,contain;
-    padding-left:10%;
+    background-position: top, bottom;
+    background-position-x: left, right;
+    background-size: 100vh, contain;
+    padding-left: 10%;
     place-items: baseline;
-    margin: 20px;
-width: fit-content;
+    margin: 1.25rem;
+    width: fit-content;
     display: grid;
     grid-template-rows: auto auto auto;
-    grid-template-columns:250px  480Px;
+    grid-template-columns: 15.625rem 30rem;
     grid-template-areas:
       "hd reb"
       "p p"
       "f f";
   }
- header{
-  width: 730px;
- }
-  h1{
-    width:250px;
+  h1 {
+    width: 15.625rem;
   }
   header {
+    width: 45.625rem;
     display: contents;
-  margin-left: -10px;
+    margin-left: -0.625rem;
   }
   main {
     display: grid;
   }
   footer {
     grid-area: f;
-  margin-left: auto;
-  margin-top: 20px;
+    margin-left: auto;
+    margin-top: 1.25rem;
   }
   .title {
-    width:350px;
+    width: 21.875rem;
     text-align: left;
     grid-area: hd;
   }
   .boxes {
-    grid-area: reb; 
-       margin-left: 270px;
+    grid-area: reb;
+    margin-left: 16.875rem;
   }
   .rateBox {
     display: grid;
     grid-template-columns: 40% auto;
-    width: 400px;
+    width: 25rem;
     align-items: center;
-    padding: 0px;
-    margin: 10px;
-
+    padding: 0rem;
+    margin: 0.625rem;
   }
   header .star {
-    margin: 0px;
+    margin: 0rem;
   }
   .persons {
     grid-area: p;
@@ -163,22 +167,21 @@ width: fit-content;
     grid-template-columns: auto auto auto;
   }
   .ratePerson {
-    width: 260px;
-height: 160px;
-    
+    width: 16.25rem;
+    height: 10rem;
   }
   #secrateBox {
-    margin-left: 40px;
+    margin-left: 2.5rem;
   }
   #thirateBox {
-    margin-left: 80px;
+    margin-left: 5rem;
   }
   #secratePerson {
-    margin-top: 15px;
-    margin-left: 20px;
-    margin-right: 20px;
+    margin-top: 0.9375rem;
+    margin-left: 1.25rem;
+    margin-right: 1.25rem;
   }
   #thiratePerson {
-    margin-top: 30px;
+    margin-top: 1.875rem;
   }
 }
